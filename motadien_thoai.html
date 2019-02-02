@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mô tả điện thoại</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main>
+    <div id="nokia">
+        <h1>Nokia</h1>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td width="20%"><input type="button" value="Bật/Tắt Nguồn" id="nokiaPowerBtn"></td>
+                <td width="40%"></td>
+                <td width="40%"><input type="button" value="Sạc Nguồn" id="nokiaChargeBtn"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><p>Dung lượng pin: <span id="nokiaDisplayBattery"></span></p></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p>Tình trạng mở máy: <span id="nokiaIsTurnOn"></span></p></td>
+            </tr>
+
+            <!-- Create Messenge -->
+            <tr class="createMessenge">
+                <td><p>Soạn tin nhắn</p></td>
+                <td>
+                    <label for="nokiaCreateTitleMessInput">Title</label>
+                    <input type="text" id="nokiaCreateTitleMessInput">
+                    <label for="nokiaCreateTitleMessInput">Content</label>
+                    <textarea id="nokiaCreateContentMessInput" cols="30" rows="10"></textarea>
+                </td>
+                <td>
+                    <input type="button" value="Send">
+                    <input type="button" value="Save">
+                </td>
+            </tr>
+            <!-- /.Create Messenge -->
+
+            <!-- DraftBox -->
+            <tr id="nokiaDraftBox" class="messBox">
+                <td>Hộp thư nháp</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.DraftBox -->
+
+            <!-- SentBox -->
+            <tr id="nokiaSentBox" class="messBox">
+                <td>Thư đã gửi</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.SentBox -->
+
+            <!-- inBox -->
+            <tr id="nokiaInBox" class="messBox">
+                <td>Hộp thư đến</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.inBox -->
+        </table>
+    </div>
+    <!-- /.nokia -->
+
+    <div id="iPhone">
+        <h1>iPhone</h1>
+        <table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+                <td width="20%"><input type="button" value="Bật/Tắt Nguồn" id="iPhonePowerBtn"></td>
+                <td width="40%"></td>
+                <td width="40%"><input type="button" value="Sạc Nguồn" id="iPhoneChargeBtn"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3"><p>Dung lượng pin: <span id="iPhoneDisplayBattery"></span></p></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p>Tình trạng mở máy: <span id="iPhoneIsTurnOn"></span></p></td>
+            </tr>
+
+            <!-- Create Messenge -->
+            <tr class="createMessenge">
+                <td><p>Soạn tin nhắn</p></td>
+                <td>
+                    <label for="iPhoneCreateTitleMessInput">Title</label>
+                    <input type="text" id="iPhoneCreateTitleMessInput">
+                    <label for="iPhoneCreateTitleMessInput">Content</label>
+                    <textarea id="iPhoneCreateContentMessInput" cols="30" rows="10"></textarea>
+                </td>
+                <td>
+                    <input type="button" value="Send">
+                    <input type="button" value="Save">
+                </td>
+            </tr>
+            <!-- /.Create Messenge -->
+
+            <!-- DraftBox -->
+            <tr id="iPhoneDraftBox" class="messBox">
+                <td>Hộp thư nháp</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.DraftBox -->
+
+            <!-- SentBox -->
+            <tr id="iPhoneSentBox" class="messBox">
+                <td>Thư đã gửi</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.SentBox -->
+
+            <!-- inBox -->
+            <tr id="iPhoneInBox" class="messBox">
+                <td>Hộp thư đến</td>
+                <td class="boxMess" colspan="2">
+                    <ul>
+
+
+                    </ul>
+                </td>
+                <!-- /.boxMess -->
+            </tr>
+            <!-- /.inBox -->
+        </table>
+    </div>
+</main>
+
+<script src="./js/Battery.js"></script>
+<script src="./js/Messenge.js"></script>
+<script src="./js/TextMessenge.js"></script>
+<script src="./js/Mobile.js"></script>
+<script src="./js/getSomething.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/handlingEvent.js"></script>
+<script src="./script.js"></script>
+</body>
+</html> 
